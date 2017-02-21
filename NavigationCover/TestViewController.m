@@ -1,20 +1,21 @@
 //
-//  ViewController.m
+//  TestViewController.m
 //  NavigationCover
 //
 //  Created by chen cx on 2017/2/16.
 //  Copyright © 2017年 chen cx. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TestViewController.h"
+
 #import "UINavigationBar+ConverView.h"
 #import "UIImage+Extensions.h"
-@interface ViewController () <UITableViewDelegate,UITableViewDataSource>
+
+@interface TestViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) UIView* headerView;
 @end
 
-@implementation ViewController
+@implementation TestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,20 +30,12 @@
     [self.navigationController.navigationBar setBackgroundImage:[UIImage createImageWithColor:[UIColor clearColor]] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
 }
-- (UIView *)headerView {
-    if (!_headerView) {
-        _headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 100)];
-        _headerView.backgroundColor = [UIColor greenColor];
-    }
-    return _headerView;
-}
 - (UITableView*)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, -64, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)+64)];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds))];
         _tableView.delegate =self;
         _tableView.dataSource =self;
         _tableView.rowHeight = 44.0f;
-        //_tableView.tableHeaderView = self.headerView;
     }
     return _tableView;
 }
@@ -60,7 +53,7 @@
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    [self.navigationController.navigationBar setNavigationBarConver:scrollView color:[UIColor redColor] originY:0.0f];
+    [self setNavigationBarCover:scrollView color:[UIColor redColor] originy:0.0f];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -68,5 +61,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

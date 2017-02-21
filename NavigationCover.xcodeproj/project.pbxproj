@@ -15,6 +15,11 @@
 		7A2373221E554CAE00B8CFAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2373201E554CAE00B8CFAF /* LaunchScreen.storyboard */; };
 		7A23732D1E554CAE00B8CFAF /* NavigationCoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A23732C1E554CAE00B8CFAF /* NavigationCoverTests.m */; };
 		7A2373381E554CAE00B8CFAF /* NavigationCoverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2373371E554CAE00B8CFAF /* NavigationCoverUITests.m */; };
+		7A2373511E554DE600B8CFAF /* UINavigationBar+ConverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2373501E554DE600B8CFAF /* UINavigationBar+ConverView.m */; };
+		7A2373541E555A4D00B8CFAF /* BaseNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2373531E555A4D00B8CFAF /* BaseNaviViewController.m */; };
+		7A2373571E557AED00B8CFAF /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2373561E557AED00B8CFAF /* UIImage+Extensions.m */; };
+		7A23735A1E557FA400B8CFAF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2373591E557FA400B8CFAF /* BaseViewController.m */; };
+		7A23735D1E557FBA00B8CFAF /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A23735C1E557FBA00B8CFAF /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		7A2373331E554CAE00B8CFAF /* NavigationCoverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationCoverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2373371E554CAE00B8CFAF /* NavigationCoverUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationCoverUITests.m; sourceTree = "<group>"; };
 		7A2373391E554CAE00B8CFAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A23734F1E554DE600B8CFAF /* UINavigationBar+ConverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+ConverView.h"; sourceTree = "<group>"; };
+		7A2373501E554DE600B8CFAF /* UINavigationBar+ConverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+ConverView.m"; sourceTree = "<group>"; };
+		7A2373521E555A4D00B8CFAF /* BaseNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNaviViewController.h; sourceTree = "<group>"; };
+		7A2373531E555A4D00B8CFAF /* BaseNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNaviViewController.m; sourceTree = "<group>"; };
+		7A2373551E557AED00B8CFAF /* UIImage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
+		7A2373561E557AED00B8CFAF /* UIImage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
+		7A2373581E557FA400B8CFAF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		7A2373591E557FA400B8CFAF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		7A23735B1E557FBA00B8CFAF /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		7A23735C1E557FBA00B8CFAF /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +116,15 @@
 		7A2373111E554CAE00B8CFAF /* NavigationCover */ = {
 			isa = PBXGroup;
 			children = (
+				7A23734B1E554DA900B8CFAF /* NavigationBar */,
 				7A2373151E554CAE00B8CFAF /* AppDelegate.h */,
 				7A2373161E554CAE00B8CFAF /* AppDelegate.m */,
 				7A2373181E554CAE00B8CFAF /* ViewController.h */,
 				7A2373191E554CAE00B8CFAF /* ViewController.m */,
+				7A2373581E557FA400B8CFAF /* BaseViewController.h */,
+				7A2373591E557FA400B8CFAF /* BaseViewController.m */,
+				7A23735B1E557FBA00B8CFAF /* TestViewController.h */,
+				7A23735C1E557FBA00B8CFAF /* TestViewController.m */,
 				7A23731B1E554CAE00B8CFAF /* Main.storyboard */,
 				7A23731E1E554CAE00B8CFAF /* Assets.xcassets */,
 				7A2373201E554CAE00B8CFAF /* LaunchScreen.storyboard */,
@@ -138,6 +158,19 @@
 				7A2373391E554CAE00B8CFAF /* Info.plist */,
 			);
 			path = NavigationCoverUITests;
+			sourceTree = "<group>";
+		};
+		7A23734B1E554DA900B8CFAF /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				7A23734F1E554DE600B8CFAF /* UINavigationBar+ConverView.h */,
+				7A2373501E554DE600B8CFAF /* UINavigationBar+ConverView.m */,
+				7A2373521E555A4D00B8CFAF /* BaseNaviViewController.h */,
+				7A2373531E555A4D00B8CFAF /* BaseNaviViewController.m */,
+				7A2373551E557AED00B8CFAF /* UIImage+Extensions.h */,
+				7A2373561E557AED00B8CFAF /* UIImage+Extensions.m */,
+			);
+			path = NavigationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2373511E554DE600B8CFAF /* UINavigationBar+ConverView.m in Sources */,
+				7A2373571E557AED00B8CFAF /* UIImage+Extensions.m in Sources */,
 				7A23731A1E554CAE00B8CFAF /* ViewController.m in Sources */,
 				7A2373171E554CAE00B8CFAF /* AppDelegate.m in Sources */,
 				7A2373141E554CAE00B8CFAF /* main.m in Sources */,
+				7A23735A1E557FA400B8CFAF /* BaseViewController.m in Sources */,
+				7A23735D1E557FBA00B8CFAF /* TestViewController.m in Sources */,
+				7A2373541E555A4D00B8CFAF /* BaseNaviViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NavigationCover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo..NavigationCover;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.NavigationCover;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -437,7 +475,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NavigationCover/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo..NavigationCover;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.NavigationCover;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
